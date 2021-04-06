@@ -7,7 +7,7 @@ on:
     types: [dispatch-from-oc.user.18.04]
 jobs:
   main:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps: 
     - name: Clone repository
       run: |
