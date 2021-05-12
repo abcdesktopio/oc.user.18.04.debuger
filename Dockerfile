@@ -13,7 +13,7 @@ RUN apt update \
   && apt install apt-transport-https
 
 # Vscode installation
-RUN apt install snapd
+RUN apt install -y snapd
 RUN snap install vscode 
 
 USER balloon
