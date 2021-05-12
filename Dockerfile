@@ -14,7 +14,7 @@ RUN apt update \
 
 # Vscode installation
 RUN apt install -y snapd
-RUN snap install vscode 
+RUN snap install code --classic
 
 USER balloon
 
