@@ -1,6 +1,9 @@
 ARG TAG=dev
 
-FROM abcdesktopio/oc.user.18.04:$TAG
+# Default base image 
+ARG BASE_IMAGE=abcdesktopio/oc.user.18.04
+
+FROM $BASE_IMAGE:$TAG
 
 USER root
 
