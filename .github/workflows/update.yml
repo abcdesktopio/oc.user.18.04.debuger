@@ -35,6 +35,6 @@ jobs:
         context: .
         push: true
         build-args: |
-          BASE_IMAGE=abcdesktopio/oc.user.${{ matrix.BASE_IMAGE_RELEASE }}:debuger
+          BASE_IMAGE=abcdesktopio/oc.user.${{ matrix.BASE_IMAGE_RELEASE }}
         tags: |
           abcdesktopio/oc.user.${{ matrix.BASE_IMAGE_RELEASE }}:debuger
