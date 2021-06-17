@@ -1,6 +1,9 @@
 ARG TAG=dev
 
-FROM abcdesktopio/oc.user.18.04:$TAG
+# Default base image 
+ARG BASE_IMAGE=abcdesktopio/oc.user.18.04
+
+FROM $BASE_IMAGE:$TAG
 
 USER root
 
@@ -10,7 +13,8 @@ RUN apt update \
   && apt install -y g++ \
   && apt install -y make \
   && apt install -y g++ \
-  && apt install apt-transport-https
+  && apt install -y apt-transport-https \
+  && apt install -y wget
 
 # Vscode installation
 COPY code_1.57.0_amd64.deb /
